@@ -13,7 +13,7 @@ void selectionsort(int array[],int size){
            
             
         } 
-         swap(array[minindex],array[i]);
+         swap(array[minindex],array[i]);   
     }
     
 }
@@ -30,9 +30,8 @@ int main(){
     for (int i = 0; i < n; i++)
     {
      cout<<arr[i]<<endl;
-    }
+    } 
     
     
     
-
-}
+}   
