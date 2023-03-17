@@ -71,7 +71,7 @@ int main(){
     return 0;
 } */ 
 
-#include<iostream>
+/*#include<iostream>
 #include<vector>
 using namespace std; 
 void merge(int arr1[],int n,int arr2[],int m, int arr3[]){
@@ -121,4 +121,33 @@ int main(){
  print(array3,8);
 
     return 0;
+}*/ 
+
+ #include<iostream>
+using namespace std;
+void merge(int num1[],int m,int num2[],int n){
+    int i=0,j=0;
+    while(i<m && j<n){
+        if(num1[i]<num2[j]){
+            num1[i]=arr1[i];
+            i++;
+            j++;
+        } 
+        else{
+            num1[i]=num2[j];
+            i++;
+            j++;
+        }
+    }
 }
+int main(){ 
+
+int arr1[6]={1,2,3,0,0,0};
+int arr2[3]={ 2,5,6}; 
+ 
+ int ans=merge(arr1.6,arr2,3);
+ cout<<ans;
+    
+
+} 
+
