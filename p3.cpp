@@ -78,7 +78,7 @@ int main(){
 
   
   //removing spaces and addding @40 que
-  #include<iostream>
+  /*#include<iostream>
   #include<string> 
    using namespace std; 
   string insertchar(string s){
@@ -110,6 +110,12 @@ int main(){
 
     
     return 0;
-  }
+  }*/ 
 
+
+#include<iostrea>
+using namespace std;
+int main(){
+  
+}
 
