@@ -105,18 +105,34 @@ cin>>target;
 
  }*/ 
 
-#include<iostream> 
+#include<iostream>
 using namespace std; 
-int main(){  
-cout<<" " ; cout<<" "; 
-cout<<" "<<" "<<" "; cout<<" ";  
-cout<<"hi hellllo bye"<<endl;  
-cout<<" "; cout<<" ";  
+void matrixTranpose(int arr[][3],int row,int col){
+   for(int i=0;i<row;i++){
+      for(int j=0;j<row;j++){
+         swap(arr[i][j],arr[j][i]);
+      }
+   }
 
-    
-
- 
-
-
-    return 0;
 }
+int main(){  
+   int arr[3][3];
+
+   for(int i=0;i<3;i++){
+      for(int j=0;j<3;j++){
+         cin>>arr[i][j];
+      }
+   } 
+
+   cout<<matrixTranpose(arr,3,3);
+   //int arr[3][3];
+   for(int i=0;i<3;i++){
+      for(int j=0;j<3;j++){
+         cout<<arr[i][j]<<" ";
+      } 
+      cout<<endl;
+   } 
+
+   return 0;
+}
+ 
