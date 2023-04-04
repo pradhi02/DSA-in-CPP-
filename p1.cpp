@@ -123,7 +123,7 @@ int main(){
     return 0;
 }*/ 
 
- #include<iostream>
+/* #include<iostream>
 using namespace std;
 void merge(int num1[],int m,int num2[],int n){
     int i=0,j=0;
@@ -149,5 +149,126 @@ int arr2[3]={ 2,5,6};
  cout<<ans;
     
 
-} 
+} */  
+
+//double pointer 
+
+/*#include<iostream> 
+using namespace std; 
+void update(int **p){
+   // p=p+1; //nothing will chnage hence no updates in the value 
+  // *p=*p+1; //yaha p1 k address shift hoga 
+   **p+**p+1; //num ki value 1 se incremet ho jaygei 
+
+}
+int main(){  
+    int num=5;
+    int *p1=&num;
+    int **p2=&p1;
+    /*int ***p3=&p2; 
+    cout<<p1; cout<<endl;
+    cout<<p2; cout<<endl;
+    cout<<p3; cout<<endl;
+    cout<<*p1; cout<<endl;
+    cout<<**p2; cout<<endl;
+    cout<<***p3; cout<<endl; 
+    cout<<p2; cout<<endl; 
+    cout<<&p1; 
+    cout<<"before"<<num<<endl;
+    cout<<"before"<<p1<<endl; 
+    //cout<<"before adddress is"<<&p1; 
+    cout<<"before"<<p2<<endl;
+    update(p2);
+    // cout<<update(p2);
+    
+    cout<<"after"<<num<<endl;
+    cout<<"after"<<p1<<endl;
+    cout<<"after"<<p2<<endl; 
+    cout<<num;
+    //cout<<N
+
+    return 0;
+} */ 
+
+
+/*#include<iostream>
+using namespace std;
+
+void update(int **p2) {
+    //p2 = p2 + 1;
+    //kuch change hoga  - NO
+
+    //*p2 = *p2 + 1;
+    //kuch change hoga - YES
+
+    **p2 = **p2 + 1;
+    //kuch change hoga - YES
+}
+    /*void update(int *p){
+        *p = (*p)  *  2;
+    }
+        void increment(int **p){
+        ++(**p);
+    } 
+int main() {
+
+    int i = 5;
+    int* p = &i;
+    int** p2 = &p;
+    cout<< endl << endl <<" Sab sahi chal rha h " << endl << endl ;
+    cout << i << endl;
+    cout << *p << endl;
+    cout << **p2 << endl;
+    cout << &i << endl;
+    cout << p << endl;
+    cout << *p2 << endl;
+    cout << &p << endl;
+    cout << p2 << endl;
+    cout << endl << endl;
+    cout<< "before " << i << endl;
+    cout<< "before " << p << endl;
+    cout<< "before " << p2 << endl;
+    update(p2);
+    cout<< "after " << i << endl;
+    cout<< "after " << p << endl;
+    cout<< "after " << p2 << endl;
+    cout << endl << endl;
+    return 0;
+    }
+*/ 
+
+/*#include<iostream>
+using namespace std; 
+void update(int **p){
+    **p =**p+1;
+}
+int main(){ 
+    int i=5;
+    int *p=&i;
+    int **p1=&p;  
+    cout<<"before update--"<<i<<endl;
+    cout<<"before update--"<<p<<endl;
+    cout<<"before update--"<< p1<<endl;
+   // cout<<"before update--"<<i<<endl; 
+   update(p1); 
+   cout<<"after update--"<<i<<endl;
+    cout<<"after update--"<<p<<endl;
+    cout<<"after update--"<<p1<<endl;
+    
+
+    return 0;
+}*/ 
+
+#include<iostream>
+using namespace std; 
+int main(){
+    int a=12;
+    a=13;
+    cout<<a; 
+    int *p=&a;
+    *p=9;
+    cout<<*p;
+    return 0;
+}
+
 
