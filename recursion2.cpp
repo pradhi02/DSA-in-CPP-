@@ -81,7 +81,7 @@ int main(){
 */ 
  
  //binary search in cpp 
-
+/*
 #include<iostream> 
 using namespace std;  
 void print (int arr[],int s,int e){
@@ -123,5 +123,33 @@ int main(){
  int arr[14]={11,22,33,44,55,66,77,88,99,100,1112,3223,3344,4455};
  bool ans=binarySearch(arr,0,13,1112); 
  cout<<ans;
+    return 0;
+}*/ 
+
+#include<iostream>
+using namespace std;  
+void selectionsortusingrecursion(int arr[],int size, int index=0){
+//base case , if the array is over then stop 
+if(index>size){
+    return;
+}   
+//find the element in the remaining array 
+int minimum=index ; 
+for(int i=index+1;i<size;i++){
+    if(arr[i]<arr[minimum]){
+        minimum=i;
+    }
+} 
+//swapping the mimimmum elemenet with the first element in the remaining array 
+
+swap(arr[index],arr[minimum]); 
+
+
+
+
+}
+int main(){  
+    
+    
     return 0;
 }
