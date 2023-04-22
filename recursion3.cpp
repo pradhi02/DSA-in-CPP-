@@ -167,7 +167,7 @@ int main()
 }  
 */ 
 
-#include <iostream>
+/*include <iostream>
 using namespace std;
 
 void selectionSort(int arr[], int n, int index = 0) {
@@ -191,7 +191,7 @@ void selectionSort(int arr[], int n, int index = 0) {
     selectionSort(arr, n, index + 1);
 }
 
-int main() {
+ int main() {
     int arr[] = {64, 25, 12, 22, 11};
     int n = sizeof(arr) / sizeof(arr[0]);
 
@@ -204,6 +204,25 @@ int main() {
     cout << endl;
 
     return 0;
-}
+}*/ 
 
+
+/*#include<iostream>
+using namespace std;  
+int factorial(int n){
+    //base case 
+    if(n==0 || n==1){
+        return 1;
+    } 
+
+    int ans= n*factorial(n-1); 
+    return ans;
+}
+int main(){  
+
+    int answer= factorial(5); 
+    cout<<answer;
+
+    return 0;
+} */ 
 
