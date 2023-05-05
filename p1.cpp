@@ -259,7 +259,7 @@ int main(){
     return 0;
 }*/ 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std; 
 int main(){
     int a=12;
@@ -267,6 +267,16 @@ int main(){
     cout<<a; 
     int *p=&a;
     *p=9;
+    cout<<*p;
+    return 0;
+}*/ 
+
+#include<iostream>
+using namespace std;
+int main(){ 
+    int *p=0;
+    int n=5;
+    p=&n; 
     cout<<*p;
     return 0;
 }
