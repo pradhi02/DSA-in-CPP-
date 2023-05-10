@@ -104,11 +104,25 @@ int main(){
     cout<<*ptr; cout<<endl;
     cout<<&ptr; */  
 
-    int arr[10];
-    int *ptr=&arr[0]; 
-    cout<<ptr;
-    ptr=ptr+1; //yaha pr address 4 bye se aagr badh jayega which means necxt block me chale jaynege hum 
-    cout<<ptr;
+    /*int arr[10];
+    int *ptr=&arr[0];  
+    cout<<ptr; cout<<endl;
+    ptr=ptr+1; //yaha pr address 4 bye se aagr badh jayega which means necxt block me chale jaynege hum  
+   // arrl;
+    cout<<ptr; cout<<endl;
+    cout<<arr[0]+1;  cout<<endl;
+    cout<<&arr[0];*/ 
+
+    int arr[3]={1,2,3}; 
+    int *ptr=&arr[0];
+    char ch[4]={"abc"};  
+    char *c=&ch[0];
+    cout<<arr;cout<<endl; //ye print krega first block k address
+    cout<<ptr;cout<<endl;//ye print krnega address
+    cout<<c;cout<<endl; //ye puri string print kr dega until null charactder 
+    cout<<*c<<endl;//ye sirf first chaer dega 
+    
+    cout<<ch;//ye bhi puri string dega 
 
 
 
