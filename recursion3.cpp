@@ -46,7 +46,8 @@ int main(){
     return 0;
 } */
 
-/*#include<iostream>
+/*
+#include<iostream>
 using namespace std;
 int power(int a,int b){
  //basecase
@@ -224,5 +225,48 @@ int main(){
     cout<<answer;
 
     return 0;
-} */ 
+} */  
 
+/*#include<iostream> 
+using namespace std;  
+int fact(int num){
+    //base case 
+    if(num==0 || num==1){
+        return 1;
+    } 
+//recurring relation 
+int answer = num * fact(num-1);  
+
+return answer;
+    
+}
+int main(){    
+   cout<<fact(5); 
+ return 0;
+}*/ 
+
+/*#include<iostream>
+using namespace std;  
+int fibonacciseries(int num){ 
+    //base case  
+ if(num<=1){
+    return num;
+ }  
+ return fibonacciseries(num-1)+fibonacciseries(num-2); 
+ }
+int main (){   
+    cout<<fibonacciseries(4);
+
+
+    return 0;
+}*/ 
+
+#include<iostream>
+using namespace std; 
+int sumdigit(int num){
+    if(num)
+}
+int main(){ 
+    
+    return 0;
+}
