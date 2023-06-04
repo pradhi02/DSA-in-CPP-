@@ -113,9 +113,3 @@ int main(){
   }*/ 
 
 
-#include<iostrea>
-using namespace std;
-int main(){
-  
-}
-
