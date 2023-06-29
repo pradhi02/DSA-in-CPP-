@@ -72,9 +72,9 @@ return 0;
 
 // C++ Program to demonstrate the working of
 // getline(), push_back() and pop_back()
-#include <iostream>
+/*#include <iostream>
 #include <string> // for string class
-using namespace std;
+using namespace std;*/
 
 /*// Driver Code
 int main()
@@ -107,20 +107,16 @@ int main()
 }
 */ 
 
-
-
 #include<iostream>
-//#include<string>
-
+#include<string>
 using namespace std; 
-int main(){
- string data ; 
- cin>>data; 
- cout<<data; 
-
-  return 0; 
+int main(){ 
+  cout<<"enter a string ";
+  string s;  
+  getline(cin,s);
+  cout<<s;
+  return 0;
 }
-
 
 
  
