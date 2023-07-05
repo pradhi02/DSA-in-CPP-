@@ -204,7 +204,7 @@ void mergesort(int arr[],int s, int e){
         for(int i=0;i<len2;i++){
             second[i]=arr[mainarrayindex++];
         } 
-
+ 
         //now we will start putting elements in main arrays and at the same time will start countig inversions 
         mainarrayindex=s; 
        int  index1=0;
