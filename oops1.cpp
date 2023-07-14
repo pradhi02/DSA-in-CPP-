@@ -82,7 +82,8 @@ int main(){
        return 0;
 } */ 
  
- #include<iostream>
+ /*#include<iostream>
+ #include<string>
  using namespace std; 
  class Animal {  
   //privateb data memebers  
@@ -93,7 +94,8 @@ public:
 
   string name; 
   char div;   
-//constrcutor creation
+//constrcutor creation 
+n//ame=new char[100]; 
 Animal(){
   cout<<"constrcutor called"<<endl;
 }  
@@ -107,7 +109,13 @@ Animal(string name, char div){
 } 
 
 //apna copy constructor bhai log 
-Animal
+Animal ( Animal &temp){ 
+ 
+  cout<<"copy constructor called"<<endl;
+  this->name=temp.name;
+  this->div=temp.div;
+} 
+
   void SetAge(int a){ 
     age=a;
 } 
@@ -156,11 +164,73 @@ cout<<"the addressm of cat is "<<&cat<<endl;
   Animal man(cat);  
   cout<<"the age of man is"<<man.GetAge();cout<<endl;
   cout<<"the name of man is "<<man.name;cout<<endl;
-  cout<<"the div  of man is"<<man.div;cout<<endl;*/ 
+  cout<<"the div  of man is"<<man.div;cout<<endl;
+
+  Animal dog("moti", 'x'); 
+  cout<<"the name of dog is "<<dog.name<<"and the division is"<<dog.div<<endl; 
+
+  dog.name="ro";
+  
+  Animal cat(dog); 
+  cout<<dog.name<<endl;
+  cout<<"the name of cat is "<<cat.name<<"and the division is"<<cat.div<<endl;
+
 
   return 0; 
 
+ }*/  
+
+ #include<iostream>
+ #include<cstring>
+ using namespace std; 
+ class hero{ 
+
+  public:
+  char *name;  
+   
+  int age;   
+//default constrcutor 
+hero(){
+  cout<<"simple constructor called"; 
+  name=new char[100];
+} 
+ void setname(char name[]){
+  this->name=name;
+ }  
+
+ //for deep copy we need our own copy constructor 
+ hero ( hero &temp){
+  cout<<"copy constructor called"<<endl; 
+  char *ch=new char[strlen(temp.name)+1];
+  strcpy(ch,temp.name);
+  this->name=ch;
+ //  this->name=temp.name;
+  this->age=temp.age;
  }
+
+  
+
+
+ };
+ int main(){  
+  hero ram; 
+  char name[10]="pradhi";
+  ram.age=12; 
+
+  ram.setname(name);
+  cout<<"the name of ram is"<<ram.name<<endl; 
+  hero yolo(ram); 
+  name[0]='g';
+  cout<<yolo.name<<endl;
+  cout<<ram.name;
+  
+  
+  cout<<"the age of ram is "<<ram.age<<endl;
+
+  
+  return 0;
+ }
+
 
 
 
