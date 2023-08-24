@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIGNMENT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+    <style>  
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Quicksand', sans-serif;
+    }
+        .container {
+            border: 4px solid rgb(19, 3, 3);
+            background-color:rgb(234, 205, 239);
+            text-align: center;
+
+        }  
+        .item{ 
+            padding: 4px;
+            border-radius: 20px;
+            background-color: aliceblue;
+            border: 2px solid rgb(19, 3, 3);
+            margin: 13px;
+        }  
+        #fruits{
+            float:left;
+             width: 40%;
+        }
+
+        #books{
+             float:left; 
+            
+             width: 40%;
+             /* if we dont define the width of the div while appling float, it will take the width of the content inside it.hence it is important to define the width */
+        } 
+
+        #stationary{
+            /* float:left; */
+            clear:both; 
+            width:100%;
+            
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, repellat minus temporibus
+                excepturi, enim consequuntur ullam impedit nobis nulla dolore praesentium culpa ea cumque, corrupti
+                fugiat at vitae. Placeat repellendus et quisquam.</p>
+        </div>
+        <div id="books" class="item">
+            <h3>BOOKS</h3>
+            <p id="secondpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, repellat minus temporibus
+                excepturi, enim consequuntur ullam impedit nobis nulla dolore praesentium culpa ea cumque, corrupti
+                fugiat at vitae. Placeat repellendus et quisquam.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>STATIONARY</h3>
+            <p id="thirdpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, repellat minus temporibus
+                excepturi, enim consequuntur ullam impedit nobis nulla dolore praesentium culpa ea cumque, corrupti
+                fugiat at vitae. Placeat repellendus et quisquam.</p>
+        </div>
+
+
+</body>
+
+</html>
